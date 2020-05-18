@@ -1,0 +1,28 @@
+/* at 530px above */
+@define-mixin atSmall {
+    @media (min-width:  530px) {
+        @mixin-content;
+    }
+}
+
+/* at 800px above */
+@define-mixin atMedium {
+    @media (min-width:  800px) {
+        @mixin-content;
+    }
+}
+
+/* at 1200px above */
+@define-mixin atLarge {
+    @media (min-width:  1200px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
