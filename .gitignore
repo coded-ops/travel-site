@@ -12,6 +12,9 @@
 node_modules/
 .tmp/
 
+# ignore 'docs/' folder. Don't ignore if you want to use github pages to publish after build
+docs/
+
 # OS or Editor folders
 .DS_Store
 Thumbs.db
