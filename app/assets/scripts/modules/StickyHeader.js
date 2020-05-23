@@ -58,8 +58,8 @@ class StickyHeader {
             let scrollPercent = el.getBoundingClientRect().top / this.browserHeight * 100;
 
             // check if you have scrolled down far enough that the section should be highlighted
-            // when scrolling down, 18 and -0.1 are tried and abitrary values
-            // when scrolling up, 33 is tried value
+            // when scrolling down, 18 and -0.1 are tried and abitrary values.
+            // when scrolling up, 33 is tried value.
             if ((scrollPercent < 18 && scrollPercent > -0.1 && this.scrollDirection == 'down') || (scrollPercent < 33 && this.scrollDirection == 'up')) {
                 let matchingLink = el.getAttribute('data-matching-link');
                 document.querySelectorAll(`.primary-nav a:not(${matchingLink})`).forEach(el => el.classList.remove('is-current-link'));
